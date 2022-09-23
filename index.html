@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="converter__full">
+        <header class="titile">
+            <h1>Конвертер валют</h1>
+        </header>
+        <main class="main__course">
+            <!-- cards start -->
+            <div class="main__cards">
+                <div class="main__card">
+                    <h2 class="main__card-title">Курс USD</h2>
+                </div>
+                <div class="main__card">
+                    <h2 class="main__card-title">Курс EUR</h2>
+                </div>
+                <div class="main__card">
+                    <h2 class="main__card-title">Курс GBP</h2>
+                </div>
+                <div class="main__card-course" data-value="USD">__</div>
+                <!-- в js мы будем находить эти дивы по data-value-->
+                <div__ class="main__card-course" data-value="EUR">__</div__>
+                <div class="main__card-course" data-value="GBP">__</div>
+            </div>
+            <!-- cards end -->
+
+
+            <!-- converter-choise starts -->
+            <div class="converter__choise">
+                <p class="give__title">Отдаю</p>
+                <p class="take__title">Получаю</p>
+                <select disabled class="form">
+                    <option value="Rub">Rub-Рубли</option>
+                </select>
+                <select id="select" class="form">
+                    <option value="USD">USD-Доллары</option>
+                    <option value="EUR">EUR-Евро</option>
+                    <option value="GBP">GBP-Фунты</option>
+                </select>
+                <input type="number" name="converter-form" id="input" class="form">
+                <input type="number" name="converter-form" id="result" class="form">
+            </div>
+            <!-- converter-choise ends -->
+
+        </main>
+    </div>
+
+
+
+
+<script src="./script.js"></script>
+</body>
+
+</html>

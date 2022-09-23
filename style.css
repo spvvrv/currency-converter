@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(73, 67, 67);
+    width: 100%;
+    min-height: 100vh;
+    margin: 50px auto;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.converter__full {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    border: 2px solid rgb(151, 151, 152);
+    border-radius: 5px;
+}
+
+.main__cards {
+    border: 1px solid rgb(151, 151, 152);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.converter__choise {
+    border: 1px solid rgb(151, 151, 152);
+    margin-bottom: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main__card-course {
+    font-size: 24px;
+    height: px;
+}
+
+.give__title {
+    justify-self: start;
+}
+
+.take__title {
+    justify-self: start;
+}
+
+.form {
+    border: 1px solid rgb(151, 151, 152);
+    border-radius: 5px;
+}
+
+/* при изменении курса валюты в большую или меньшую сторону */
+.main__card-course.top {
+    color: rgb(255, 51, 51);
+}
+
+.main__card-course.bottom {
+    color: rgb(19, 189, 61);
+}
+
+/* медиазапросы */
+@media (min-width: 360px) {
+        .converter__full{
+            max-width: fit-content;
+        }
+}
+@media (min-width: 768px) {
+    .converter__full{
+        max-width: 50%;
+    }
+}
