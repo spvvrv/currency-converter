@@ -13,7 +13,7 @@ body {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .converter__full {
@@ -32,7 +32,7 @@ h2 {
     margin-bottom: 10px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     padding: 10px;
     border-radius: 5px;
@@ -51,7 +51,7 @@ h2 {
 }
 
 .main__card-course {
-    font-size: 24px;
+    font-size: 18px;
     height: px;
 }
 

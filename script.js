@@ -3,6 +3,7 @@ const rates = {
 const elementUSD = document.querySelector('[data-value="USD"]'); //ищем по атрибуту data-value. Внимание на кавычки!
 const elementEUR = document.querySelector('[data-value="EUR"]');
 const elementGBP = document.querySelector('[data-value="GBP"]');
+const elementTRY = document.querySelector('[data-value="TRY"]')
 
 //элементы формы, ввод суммы, выбор валюты, поле с результатом
 const input = document.querySelector('#input');
@@ -34,13 +35,15 @@ async function getCurrencies() {
 
     rates.USD = result.Valute.USD;
     rates.EUR = result.Valute.EUR;
-    rates.GBP = result.Valute.GBP; //записали переменные в объект rates
+    rates.GBP = result.Valute.GBP;
+    rates.TRY = result.Valute.TRY; //записали переменные в объект rates
     console.log(rates);
 
     //Выводим на страницу и округлим до 2 знаков после  точки
     elementUSD.textContent = rates.USD.Value.toFixed(2);
     elementEUR.textContent = rates.EUR.Value.toFixed(2);
     elementGBP.textContent = rates.GBP.Value.toFixed(2);
+    elementTRY.textContent = rates.TRY.Value.toFixed(2);
 
 
     //если курс пошел вверх по сравнению со вчерашним днем - красная подсветка, если вниз - зеленая
@@ -61,6 +64,12 @@ async function getCurrencies() {
         elementGBP.classList.add('top');
     } else {
         elementGBP.classList.add('bottom');
+    }
+
+    if (rates.TRY.Value > rates.TRY.Previous) {
+        elementTRY.classList.add('top');
+    } else {
+        elementTRY.classList.add('bottom');
     }
 }
 
